@@ -12,7 +12,7 @@
     "@tabler/core": "^1.4.0",
     "@tabler/icons-react": "^3.34.1",
     "@tailwindcss/vite": "^4.1.11",
-    "@xyflow/react": "^12.5.1",
+    "@xyflow/react": "^12.8.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.525.0",
