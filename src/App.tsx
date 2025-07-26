@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useRef } from 'react';
 import {
   ReactFlow,
   Background,
@@ -11,6 +11,7 @@ import {
   type OnConnect,
 } from '@xyflow/react';
 import { initialNodes, nodeTypes } from './nodes';
+import { AppNode } from './nodes/types';
 // @ts-ignore
 import Sidebar from './Sidebar.jsx';
 import '@xyflow/react/dist/style.css';
@@ -69,7 +70,7 @@ export default function App() {
       });
       // Get the custom message if present
       const customMessage = event.dataTransfer.getData('custom-message');
-      let newNode;
+      let newNode: AppNode;
       if (type === 'sendMessage') {
         const label = customMessage || 'sendMessage node';
         newNode = {
